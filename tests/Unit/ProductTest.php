@@ -11,6 +11,7 @@ class ProductTest extends TestCase
 
     public function setUp(): void
     {
+    	parent::setUp();
     	$this->product  = new Product('test_product',200);
     }
 
