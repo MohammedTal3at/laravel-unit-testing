@@ -42,6 +42,12 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
+        'testing_sqlite' => [
+            'driver' => 'sqlite',
+            'database' =>  '/var/www/html/laravel-unit-testing/tests/testing_database.sqlite',
+            'prefix' => '',
+            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
+        ],
 
         'mysql' => [
             'driver' => 'mysql',
